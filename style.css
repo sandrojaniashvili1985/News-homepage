@@ -66,6 +66,11 @@ header img:nth-child(2) {
   header{
     width: 77%;
   }
+
+  header img:nth-child(1){
+    width: 4.006rem;
+    height: 2.494rem;
+  }
 }
 
 nav {
@@ -155,6 +160,7 @@ main {
     grid-template-rows: 511px 129px;
     row-gap: 4.438rem;
     column-gap: 1.875rem;
+    padding-top: 3.444rem
   }
 
   .main-img-desctop {
