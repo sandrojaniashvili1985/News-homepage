@@ -29,23 +29,29 @@
 
 body {
   background: var(--clr-almost-white);
-  width: 375px;
-  height: 1872px;
+  /* width: 375px;
+  height: 1872px; */
   padding: 1.75rem 1rem;
+  min-height: 100vh;
+  /* display: flex; */
+  /* overflow-x: hidden; */
+  /* width: 100%; */
 }
 
-@media (min-width:800px) {
+@media (min-width:1440px) {
   body{
-    width: 1440px;
-    height: 1024px;
+    /* width: 1440px;
+    height: 1024px; */
     padding: 6.063rem 10.313rem;
   }
 }
 
 header {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  width: 91%;
+  width: min(343px,100%);
+  margin: auto;
 }
 
 header img:nth-child(1) {
@@ -59,12 +65,12 @@ header img:nth-child(2) {
   align-self: center;
 }
 
-@media (min-width:800px) {
+@media (min-width:1440px) {
   .nav-toggle-label {
     display: none;
   }
   header{
-    width: 77%;
+    width: min(1110px,100%);
   }
 
   header img:nth-child(1){
@@ -101,7 +107,7 @@ input:checked ~ nav {
   height: 669px;
   background-color: var(--clr-almost-white);
   left: 119px;
-  box-shadow: -105px 0 0  var(--clr---clr-Dark-Space-Blue-opasiti);
+  box-shadow: -120px 0 0  var(--clr---clr-Dark-Space-Blue-opasiti);
 }
 
 .nav-toggle {
@@ -121,7 +127,7 @@ a:active {
   color: var(--clr-Light-Vermillion);
 }
 
-@media (min-width:800px) {
+@media (min-width:1440px) {
   nav {
     display: block
   }
@@ -142,6 +148,7 @@ main {
  grid-template-rows: 39.75rem 30.563rem 28.188rem;
  grid-template-columns: 21.438rem;
  padding-top: 2rem;
+ justify-content: center;
 }
 
 .main-img-desctop {
@@ -154,7 +161,7 @@ main {
   width: 100%;
 }
 
-@media (min-width:800px) {
+@media (min-width:1440px) {
   main {
     grid-template-columns: 730px 350px;
     grid-template-rows: 511px 129px;
@@ -228,7 +235,7 @@ main {
   cursor: pointer;
 }
 
-@media (min-width:800px) {
+@media (min-width:1440px) {
   .section-1-div-text h1 {
     font-size: var(--fs-56);
     line-height: 3.5rem;
@@ -299,7 +306,7 @@ main {
   gap: 2rem;
 }
 
-@media (min-width:800px) {
+@media (min-width:1440px) {
   .section-3-div-container {
     grid-template-columns: 350px 350px 350px;
     grid-template-rows: 129px;
